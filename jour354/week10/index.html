@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- http://bit.ly/jour354  -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Workflow - JOUR 354/654 - Interactive Multimedia Storytelling</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Interactive Multimedia Storytelling course at the University of Maryland." />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/960_16_col.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+    <div id="wrapper" class="container_16">
+        <div id="header">
+            <div class="grid_16">
+                <p class="subhead">
+                    JOUR 354/654
+                </p>
+                <h1>Interactive Multimedia Storytelling</h1>
+                <ul class="nav">
+                    <li>
+                        <a href="../syllabus/">
+                            Syllabus
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../schedule/">
+                            Schedule
+                        </a>
+                    </li>
+                    <li class="last">
+                        <a href="../resources/">
+                            Resources
+                        </a>
+                    </li>
+                </ul>
+                <!-- end .nav -->
+            </div>
+            <!-- end .grid_16 -->
+            <div class="clear"</div>
+        </div>
+        <!-- end #header -->
+        <div id="content">
+            <div class="grid_16">
+                <h2>Workflow and File Organization</h2>
+                <p><strong>1. Create a project folder. Name it something that makes sense, and is web friendly:</strong></p>
+                <p>For a midterm project, I'd call the folder</p>
+<pre class="red">
+'midterm'
+</pre>
+                <p>And I'd put it in my</p>
+<pre class="red">
+'jour354' or 'jour654'
+</pre>
+                <p>folder, which you should create at the beginning of a project (or class, as in this case.)</p>
+                <p class="section"><strong>2. Grab an HTML template and drop it in the folder. Rename it as</strong></p>
+<pre class="red">
+'index.html'
+</pre>
+                <p>Think of your browser like a file browser. You use slashes '/' to go into folders. Browsers read any file named 'index' as the file to show by default when looking into that folder.</p>
+                <p>This means we can have nice and neat urls like:</p>
+<pre class="red">
+http://www.wilsonandrews.org/jour354/
+</pre>
+                <p>Without having that messy <span class="red">filename.html</span> on the end. Makes your urls a lot cleaner. You won't always have to use index.html files, but I always opt for that approach.</p>
+                
+                <p class="section"><strong>3. If I know I'm going to have javascript, css and images, which is almost always the case, I create folders for these.</strong></p>
+<pre class="red">
+js css images
+</pre>
+                <p>You can call these folders whatever you like. Short is nice because you often have to type these things many times. A lot of people use <span class="red">imgs</span> instead for that reason.</p>
+                
+                <p>We've already seen how to refer to a folder from an html file.</p>
+<pre class="red">
+&lt;link rel="stylesheet" href="<strong>css/style.css</strong>" /&gt;
+&lt;script type="text/javascript" src="<strong>js/scripts.js</strong>"&gt;&lt;/script&gt;
+&lt;img src="<strong>images/myimage.jpg</strong>" /&gt;
+</pre>
+
+                <p class="section"><strong>A COUPLE TRICKY THINGS</strong></p>
+                <p>Sometimes you want to refer to the images folder from your css or js files. Let's use the example of a background image in css.</p>
+                <p><strong>CSS</strong></p>
+<pre class="red">
+body {
+    background:url(<strong>../images/hash.gif</strong>);
+}
+</pre>
+                <p>Because the css file is within a folder that is on the same level as the html file that we're referencing it from, the file reference must go up a level.</p>
+                
+<pre class="red">
+body {
+    background:url(images/hash.gif);
+}
+/*
+This would be looking for the image like this: css/images/hash.gif, since the css file is INSIDE the css folder
+*/
+</pre>
+                <p>We use <span class="red">../</span> to go up a level, which puts us in the parent folder, <span class="red">midterm</span>, before looking for <span class="red">images/hash.gif</span>.</p>
+<pre class="red">
+../images/hash.gif
+</pre>
+
+                <p>However, in JavaScript, your code is actually being read by the browser from within the html page, so you can treat any image or other file references in your js as if they were in the html file.</p>
+                <p><strong>JavaScript</strong></p>
+<pre class="red">
+var myImage = '<strong>images/awesome.jpg</strong>';
+$('#wrapper').html('&lt;img src="' + myImage +'"&gt;');
+</pre>
+                <p>See how this reference <span class="red">images/awesome.jpg</span> is the same as if we were targeting the image from the html file?</p>
+
+                <p class="section">If you had a data file that you were loading into your js, the same rule applies. Create a folder named <span class="red">data</span> or something similar, and drop your data file in there. Then...</p>
+
+<pre class="red">
+var myData = 'data/sample.xml';
+</pre>
+                <p>We'll get into loading data in an upcoming class.</p>
+                
+                <p class="section"><strong>So what does it look like to create a project with more than one page (like this website)?</strong></p>
+                <p>Let's look at my setup and then check out my source code.</p>
+                <p><a href="http://wilsonandrews.org/jour354/">http://wilsonandrews.org/jour354/</a><br/>
+                   <a href="http://wilsonandrews.org/jour354/schedule/">http://wilsonandrews.org/jour354/schedule/</a><br/>
+                   <a href="http://wilsonandrews.org/jour354/resources/">http://wilsonandrews.org/jour354/resources/</a><br/>
+                   <a href="http://wilsonandrews.org/jour354/midterm/">http://wilsonandrews.org/jour354/midterm/</a>
+                </p>
+                
+                <h2 class="section">Publishing</h2>
+                <p><strong>Once you're done with creating all your files, and making your project work, it's time to publish.</strong></p>
+                <p>The web is set up exactly the same as the filesystems on your computer. There are main folders, called <span class="red">root</span> folders that host the index file at the root of the site, the top-level parent.</p>
+                
+                <p>The root of the Washington Post's site is: <a href="http://www.washingtonpost.com/">http://www.washingtonpost.com/</a></p>
+                
+                <p>The hosting server is set up with a root folder that has an index file in it. That index file is what you see when you visit the homepage.</p>
+                
+                <p>Now on a huge site like that, the file system is a little more complex because it's powered by a CMS that dynamically creates pages instead of a human manually editing then publishing an HTML file like you guys have been doing. But it still uses the same structure as any other web site: <strong>files inside folders inside folders</strong>.</p>
+                
+                <p>To publish to your own personal server, you can use an FTP client, and it's just like copying and pasting your files into a new folder. The only difference is that you're moving your files into a public folder that is accessible via a browser on the web.</p>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- end #content -->
+    </div>
+    <!-- end #wrapper -->
+
+</body>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5521110-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</html>

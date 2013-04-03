@@ -1,0 +1,5 @@
+table.data-table {font-size:14px;width: 100%;margin:10px 0;}
+table.data-table th {font-weight: bold;padding:5px 10px;background: #444;border-bottom: 1px solid black;color:white;}
+table.data-table tr {background: #e8e8e8;}
+table.data-table tr.odd {background: white;}
+table.data-table td {padding:5px 10px;border-bottom: 1px solid #ccc;}
