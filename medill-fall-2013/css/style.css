@@ -2,7 +2,7 @@ body {
     padding-bottom: 40px;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .nav-header {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -29,14 +29,14 @@ p {
     margin-bottom: 20px;
 }
 
-ol {
-    font-family: Palatino;
-    margin-bottom: 0;
+ol, ul {
+    margin-bottom: 0px;
 }
 
-ol li {
-    font-size: 16px;
-    line-height: 2em;
+ol li, ul li {
+    font-size: 15px;
+    line-height: 1.7em;
+    margin-bottom: 5px;
 }
 
 .label,
@@ -80,6 +80,13 @@ ol li {
 .navbar .nav {
     margin-top:3px;
 }
+
+.nav > li {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
 .navbar .navbar-text {
     line-height: 43px;
 }
@@ -191,11 +198,12 @@ ol li {
   text-shadow: 0 0 10px rgba(255,255,255,.25);
 }
 
+.well {
+    margin-top:10px;
+}
+
 .well p {
     margin-bottom: 10px;
-}
-.well p strong {
-    font-family: 'Montserrat', sans-serif;
 }
 
 /* responsive bits */

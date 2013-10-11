@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Data - Digital Frameworks at Medill, Fall 2013</title>
+    <title>Charts - Digital Frameworks at Medill, Fall 2013</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -57,7 +57,7 @@
     ================================================== -->
     <header class="jumbotron subhead" id="overview">
       <div class="container">
-        <h1>DATA</h1>
+        <h1>CHARTS</h1>
       </div>
     </header>
 
@@ -170,88 +170,20 @@
         
         <div class="span4">
             
+<!--
             <h4 class="accent">Exercises</h4>
             
             <p>Complete the exercises and <a href="mailto:unc.wilson@gmail.com">email me</a> the answers in a single email <strong>before class</strong>.</p>
-            
-            <h4>Sample data</h4>
-            <p><a href="data/vote498.csv">Click here</a> to download the sample data for this lesson. This is a CSV (comma-separated values, a spreadsheet) of the House's vote to delay the implementation of Obama's health-care law on Sept. 29. If you're interested in getting more vote data, select a vote from <a href="http://www.govtrack.us/congress/votes">here</a> and select "Download as CSV."</p>
+-->
 
             <h4>Sections</h4>
             <p>
                 <a href="#sort">Sort</a>: <a href="#exercise1">Exercise #1</a><br>
-                <a href="#filter">Filter</a>: <a href="#exercise2">Exercise #2</a><br>
-                <a href="#quick">Quick Functions</a>: <a href="#exercise3">Exercise #3</a><br>
-                <a href="#pivot">Pivot tables</a><br>
-                <a href="#refine">Open Refine</a><br>
-                <a href="#homework">Homework assignment</a><br>
             </p>
         </div>
       </div><!--/row-->
       
       <!-- end exercises and pre-class material -->
-
-      <hr/>
-      
-      <div class="row">
-        <div class="span7 offset1">
-            <h3 id="pivot">Pivot tables</h3>
-            <p>Large datasets can seem overwhelming. It is difficult to draw insight from scanning through hundreds of rows of data. However, if we group and transform that data, aggregating into useful categories and subsets, stories can start to emerge.</p>
-            <p>Excel provides a handy way to do this in the form of pivot tables. A pivot table allows you to group on a common field, like state or political party, and create summaries based on those groupings.</p>
-            
-            <p><a href="data/vote498a.csv">Download data for this activity</a></p>
-            
-            <h4>How to create a pivot table</h4>
-            <p>Make sure you have selected either a single cell in your data or the entire dataset. Then select <span class="label label-accent">Data > PivotTable</span>. Make sure the table or range that it's using looks correct, and click OK. You should then see something that looks like this:</p>
-            
-            <div class="row-fluid">
-                <img src="images/pivot-table-1.jpg">
-            </div>
-            
-            <p>Here's what each of the areas mean:</p>
-            
-            <p><strong>Report Filter:</strong> Works just like the regular filter function. Want to filter your data by a field? Drag it into this area.</p>
-            
-            <p><strong>Row Labels:</strong> These are the overall field(s) that you want to aggregate: i.e. if you want to see the data combined by state, drag the state field into this area.</p>
-            
-            <p><strong>Column Labels:</strong> Allow you to subdivide your rows into even further subsets. You could further divide the state-by-state breakdown by adding gender, to see values by state by gender.</p>
-            
-            <p><strong>Values:</strong> These are the field(s) that contain the values you'll be summarizing, often a numeric field. For example, if you have a list of all the crimes in D.C., you could perform a COUNT function on the crime type field, or an AVERAGE function on the perpetrator age field.</p>
-            
-            <div class="well">
-                <ol>
-                    <li>Let's try looking at vote by state.</li>
-                    <li>How about the percent of Yea's in each state?</li>
-                    <li>Let's chart it.</li>
-                </ol>
-            </div>
-            
-            <h3 id="refine">Open Refine</h3>
-            <p>So what if your data isn't nice and clean like we've seen thus far? That's where Open Refine comes in.</p>
-            <p><a href="https://docs.google.com/document/d/1M5RbrqfSWnCaX4Sp_0MLCH0AhkxUYc2CMsxRpYgKxSQ/">Click here to access the Open Refine Workshop.</a></p>
-            
-            <div id="" class="well">
-                <h4 class="accent"><i class="icon-pencil"></i> Class exercise</h4>
-                <ol>
-                    <li>Open the sample data from the pre-class exercises, vote498.csv, in Refine.</li>
-                    <li>Use the "Add column based on this column" feature to <strong>create a party column</strong> for the data set. This can be parsed out of the "person__name" field. You can use the same process from "3. Parsing out relevant information" in the Refine Workshop doc.</li>
-                </ol>
-            </div>
-            
-            <div id="homework" class="well">
-                <h4 class="accent"><i class="icon-pencil"></i> Homework assignment</h4>
-                <p><a href="data/crime_incidents_2013_CSV.zip">Download this data set</a>. It's a collection of all the crimes in DC for 2013, downloaded from <a href="http://data.dc.gov/Main_DataCatalog.aspx">here</a>. I want you to use a pivot table to find some stats and analyze a few factors.</p>
-                <p><strong>Please do the following and send me your completed document before next class.</strong></p>
-                <ul>
-                    <li>First, create a pivot table from the entire crime data set.</li>
-                    <li>Create a simple bar chart that shows the frequency of each type of offense, ranked from most to least. You'll need to create a view into this data using the pivot table first, then use that data to chart, just as we did in class. <a href="http://crimemap.dc.gov/CrimeDefinitions.aspx">Here's an explanation of the crime definitions from MPD</a>.</li>
-                    <li>Compare the business improvement districts field of the data. Find a data story in this comparison. You could compare the types of crimes that happen in each; methods used; which districts see more crime during the day versus night, and so on. You could also do the same by police district, where your sample size will be greater.<br><strong>Create a chart that illustrates what you find.</strong></li>
-                    <li><a href="mailto:unc.wilson@gmail.com">Send me</a> your completed spreadsheet document along with a brief written description of what you found.</li>
-                </ul>
-            </div>
-        </div>
-      </div>
-      <!--/row-->
       
       <hr>
 
