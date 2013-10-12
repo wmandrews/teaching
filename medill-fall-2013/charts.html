@@ -65,120 +65,93 @@
       <div class="row mt10">
         <div class="span7 offset1">
                 
-            <h2>Microsoft Excel</h2>
-            <p>Excel is far from a perfect data analysis tool, but it is ubiquitous and has some great functionalities that we can use to find stories in data. A nice open-source replacement for Excel is <a href="http://www.openoffice.org/">Open Office</a>.</p>
+            <h2>Datawrapper</h2>
+            <p><a href="http://datawrapper.de/">Datawrapper.de</a></p>
+            <p>This open source charting tool is a great way to quickly publish interactive charts online. All it requires is a chunk of data in spreadsheet format, and then you can choose the form and other options for the chart. Datawrapper includes an ability to save your charts to a library so you can easily access and edit them at a later date.</p>
             
-            <h3>Helpful shortcuts</h3>
-            <p>Selecting a chunk of data, such as a row, column or the entire dataset is a common activity in spreadsheets. There are some handy keyboard shortcuts that cut down on the time it takes to do this. Below, CTRL is for PC, substitute the COMMAND key for Mac.</p>
+            <p><strong>Chart types:</strong> Bar, column, line, pie, table.</p>
             
-            <p><strong>Jump to the next empty cell:</strong> <span class="label label-accent">CTRL+Arrow key</span> in the direction you want to jump.</p>
-            <p><strong>Select until the next empty cell:</strong> <span class="label label-accent">CTRL+SHIFT+Arrow key</span> in the direction you want to select. This is often helpful when you want to select your entire dataset.</p>
-            <p>To do this, select the cell <span class="label label-accent">A1</span><br>
-            and do <span class="label label-accent">CTRL+SHIFT+ <i class="icon-arrow-right"></i></span><br>
-            then <span class="label label-accent">CTRL+SHIFT+ <i class="icon-arrow-down"></i></span>.<br>
-            </p>
-            <p>As long as there are no empty cells in your last column, you should have your entire table selected. You can keep doing the CTRL+SHIFT in the same direction to keep skipping to empty cells until you reach the bottom of your data.</p>
-
+            <h4>Let's try it together.</h4>
+            <p><a href="https://docs.google.com/spreadsheet/ccc?key=0Ar3tE0gJ38POdHVIZ1FGN1hpcF9BSjF4c0x3cG1vRnc#gid=0">Open this link.</a> It's a table of Facebook's stock price on the day of its IPO.</p>
             
-            <h3 id="sort">Sort</h3>
-            <p>Arranging your data in order from greatest to least, or vice versa, is important when preparing data for charting. Much charting software plots data points in the order they're entered, and it is easier to understand a list ordered by the plotted values.</p>
-            <div class="row-fluid">
-                <div class="span6">
-                    <h5>Unsorted</h5>
-                    <a href="http://bl.ocks.org/mbostock/3885304">
-                        <img src="images/bar-chart-unsorted.png">
-                    </a>
-                </div>
-                <div class="span6">
-                    <h5>Sorted</h5>
-                    <a href="http://bl.ocks.org/mbostock/3885304">
-                        <img src="images/bar-chart-sorted.png">
-                    </a>
-                </div>
-            </div>
-            
-            <div class="row-fluid">
-                <div class="span4">
-                    <h4>How to sort</h4>
-                    <p>Click a cell in the column you wish to sort. Make sure you don't have an entire column selected, or else your sort will corrupt the data by re-ordering only that column.</p>
-                    <p>You can either click the sort icon in the toolbar, or select <span class="label label-accent">Data > Sort</span> from the application menu for more advanced sorting options.</p>
-                </div>
-                <div class="span8">
-                    <img src="images/sort.jpg">
-                </div>
-            </div>
+            <p>Let's walk through the process of creating a line chart. Datawrapper has pretty good instructions in its creation tool.</p>
             
             <div id="exercise1" class="well">
                 <h4 class="accent"><i class="icon-pencil"></i> Exercise #1</h4>
-                <p>Use the sort function to find the oldest and youngest person in the House of Representatives. Submit their name, party, state and district number.</p>
+                <p>Open <a href="https://docs.google.com/spreadsheet/ccc?key=0Ar3tE0gJ38POdGxkZ1FKX2lwbm81VmQzY1lCRUxqT2c#gid=0">this dataset</a> of DC crime data.</p>
+                <p>Create a chart in Datawrapper that you think best illustrates and tells the story of this data.</p>
             </div>
             
-            <h3 id="filter">Filter</h3>
-            <p>It is often important to look at subsets of your data. That's where the stories are often found. <a href="http://www.washingtonpost.com/wp-srv/special/business/cost-of-higher-education/">Here's one example</a> in a graphic we did at the Post. Looking at tuition costs by a subset of schools types reveals dramatic differences in cost changes, though costs are increasing at every type.</p>
-    
-            <div class="row-fluid">
-                <div class="span4">
-                    <h4>How to filter</h4>
-                    <p>You can either click the filter icon in the toolbar, or select <span class="label label-accent">Data > Filter</span> from the application menu.</p>
-                </div>
-                <div class="span8">
-                    <img src="images/filter.jpg">
-                </div>
+            <h2>GitHub Gists and bl.ocks.org</h2>
+            <p><a href="https://gist.github.com">Gist</a> | <a href="http://bl.ocks.org/">bl.ocks.org</a></p>
+            <p>GitHub is a powerful collaborative tool for creating software. It allows developers to work on project simultaneously, tracking new features and working together to create open source software.</p>
+            
+            <p>Gists are a small feature of GitHub. They're mostly used for sharing and saving small snippets of useful code.</p>
+            
+            <p>They really come in handy for us when paired with the website, <a href="http://bl.ocks.org/">bl.ocks.org</a>.</p>
+            
+            <h4>Here's why</h4>
+            <p>Bl.ocks will pull in your Gists to show you an actual embedded version of it. So we can take embed code from Datawrapper and other services, and use Gist + Bl.ocks to test them on the web.</p>
+            <p>You'll often be embedding the visuals you create in WordPress, and when you do that, you don't really need this setup. But for previewing work and showing me what you've created, this is a really helpful and easy workflow.</p>
+            
+            <p><strong>Choose one of the charts to use and follow these instructions.</strong></p>
+            
+            <div id="blocks-setup" class="well">
+                <h4 class="accent">How to use bl.ocks.org</h4>
+                <ol>
+                    <li>Create a new <a href="https://gist.github.com">Gist</a>.</li>
+                    <li>Give it a descriptive name, like <span class="label label-accent">Facebook IPO chart</span>, in the Gist description field.</li>
+                    <li>Name the file <span class="label label-accent">index.html</span>.</li>
+                    <li>Click <span class="label label-accent">Create Public Gist</span>.</li>
+                    <li>Now go to bl.ocks.org/[githubusername], replacing [githubusername] with your username. My url would be <a href="http://bl.ocks.org/wmandrews">bl.ocks.org/wmandrews</a>.</li>
+                    <li>You should see your Gist on the page. Click the description text and it should load your code in a preview page.</li>
+                </ol>
+                <br>
+                <p>There's also a few more instructions on <a href="http://bl.ocks.org/">bl.ocks</a>, but these are the essentials.</p>
             </div>
             
-            <div class="row-fluid">
-                <div class="span4">
-                    <p>Once you've activated the filter function, each of your header fields should have arrows next to them. To filter by a specific field, click its arrow and toggle the selections to get the subset you desire. This view has removed all of the "Not Voting" representatives. Excel displays a handy count of all the records found for a given filter. 423 representatives voted "Yea" or "Nay" in this vote.</p>
-                </div>
-                <div class="span8">
-                    <img src="images/filter-2.jpg">
-                </div>
-            </div>
+            <p><strong>Now do the same process with the other chart.</strong></p>
             
-            <div id="exercise2" class="well">
+            <h2>Chartbuilder</h2>
+            <p><a href="http://quartz.github.io/Chartbuilder/">Chartbuilder</a>, an open source tool from <a href="http://qz.com">Quartz</a></p>
+            
+            <p>Interactivity is a great feature of the web, but sometimes it simply isn't necessary. Every chart doesn't need the ability to roll over and see the data point. This is often overkill.</p>
+            
+            <p>Static charts, like those that you can create with Chartbuilder, are a quick and elegant solution to simple data viz. This is a fairly new tool, so sometimes it can be a little buggy.</p>
+            
+            <p><strong>Chart types:</strong> Bar, column, line, scatterplot.</p>
+            
+            <div id="chartbuilder" class="well">
                 <h4 class="accent"><i class="icon-pencil"></i> Exercise #2</h4>
-                <p>Use the filter function to find how many New Jersey reps voted no and how many California reps voted yes. You may need to use the search option inside the filter popup to find a rep's state.</p>
+                <p>Make a line chart in Chartbuilder using the <a href="https://docs.google.com/spreadsheet/ccc?key=0Ar3tE0gJ38POdHVIZ1FGN1hpcF9BSjF4c0x3cG1vRnc&usp=drive_web#gid=0">Facebook IPO data</a>.</p>
             </div>
             
-            <h3 id="quick">Quick Functions</h3>
-            <p>You may be familiar with writing functions in a cell of an Excel document. These functions are written starting with an equals sign, then followed by a function name like AVERAGE or MAX. <a href="http://office.microsoft.com/en-us/excel-help/excel-functions-by-category-HP005204211.aspx">Here's a complete list of functions.</a></p>
-    
-            <div class="row-fluid">
-                <div class="span4">
-                    <h4>How to use</h4>
-                    <p>Select the column of values you want to perform the function on. You want to be sure you're selecting only values and not your headers when you use the quick functions.</p>
-                </div>
-                <div class="span2">
-                    <img src="images/quick.jpg">
-                </div>
+            <p>More details about how to use Chartbuilder can be found on its <a href="https://github.com/Quartz/Chartbuilder/">GitHub page</a>.</p>
             
-                <div class="span3">
-                    <p>Once you've selected the relevant data, you can choose the quick function you want to use in the dropdown menu at the bottom of the window.</p>
-                </div>
-                <div class="span3">
-                    <img src="images/quick-2.jpg">
-                </div>
+            <h2 id="google-charts">Google Charts</h2>
+            <p><a href="https://developers.google.com/chart/">Google Charts</a></p>
+            
+            <p>Google has its own tool for creating charts. They're not as elegant as the other tools we've seen, but they're much more flexible and offer a lot more visual types. It has a useful documentation, but it is a little more technical than the other tools because you have to actually edit code.</p>
+            
+            <p><strong>Chart types:</strong> Pie, scatter, line, bar, treemap, and <a href="https://developers.google.com/chart/interactive/docs/gallery">many more.</a> Select an example to alter it for your purposes.</p>
+            
+            <div id="homework" class="well">
+                <h4 class="accent"><i class="icon-pencil"></i> Homework assignment</h4>
+                <p>Create a chart for one of your stories this week using one of the charting tools we've discussed. If the stories you're working on don't have any relevant data, find some data related to your beat and create a standalone chart that tells a story. Let me know if you need help knowing where to look for data relevant to your beat.</p>
+                <p><strong>To submit your work:</strong> If you publish the chart with your story, you can send me a link to the page. If you don't publish it, please use the Gist+bl.ocks method, and send me a link to the chart from your bl.ocks.org page.</p>
             </div>
-            
-            <div id="exercise3" class="well">
-                <h4 class="accent"><i class="icon-pencil"></i> Exercise #3</h4>
-                <p>This exercise combines filters and quick functions. What is the average age of each vote type: Yea, Nay and Not Voting? You should answer with 3 different ages for each type.</p>
-            </div>
-            
         </div>
         <!-- end .span7 -->
         
         <div class="span4">
-            
-<!--
-            <h4 class="accent">Exercises</h4>
-            
-            <p>Complete the exercises and <a href="mailto:unc.wilson@gmail.com">email me</a> the answers in a single email <strong>before class</strong>.</p>
--->
 
             <h4>Sections</h4>
             <p>
-                <a href="#sort">Sort</a>: <a href="#exercise1">Exercise #1</a><br>
+                Datawrapper: <a href="#exercise1">Exercise #1</a><br>
+                bl.ocks.org: <a href="#blocks-setup">How to use Gist + bl.ocks</a><br>
+                Chartbuilder: <a href="#exercise2">Exercise #2</a><br>
+                <a href="#google-charts">Google Charts</a><br>
+                <a href="#homework">Homework assignment</a><br>
             </p>
         </div>
       </div><!--/row-->
