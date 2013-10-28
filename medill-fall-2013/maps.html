@@ -154,7 +154,38 @@
                 <p>To turn this map in, send me the Share link from the top of the Publish options <i>as well as</i> a link to your map embedded on a bl.ocks page, just like we did with charts.</p>
             </div>
             
-                
+            <div id="mapbox-js" class="row-fluid">
+                <div class="span4">
+                    <h4>Using MapBox JS</h4>
+                    <p><a href="https://www.mapbox.com/mapbox.js/example/v1.0.0/">Click here for examples</a></p>
+                    <p>MapBox also has a JavaScript library that allows you to further customize your map's functionality and styles.</p>
+                    <p>The examples page on Mapbox.com has some handy snippets of code that will allow you to embed your map with more customization.</p>
+                </div>
+                <div class="span8">
+                    <img src="images/mapbox-js.png">
+                </div>
+            </div>
+            
+            <div class="row-fluid">
+                <div class="span4">
+                    <p>MapBox sets you up with some starter code to get going with their JavaScript library.</p>
+                    <p>Navigate to your MapBox map of locations and click the <span class="label label-accent">Publish</span> button. Then select the mapbox.js tab.</p>
+                    <p>You can see the code to get you started in the section titled HTML template.</p>
+                    <h4><a href="https://gist.github.com/wmandrews/7187740" target="_blank">Let's take a look at this template <i class="icon-caret-right"></i></a></h4>
+                </div>
+                <div class="span8">
+                    <img src="images/publish-mapboxjs.png">
+                </div>
+            </div>
+            
+            <div id="inclass1" class="well">
+                <h4 class="accent"><i class="icon-pencil"></i> Embedding a map with Mapbox JS</h4>
+                <p>Save this HTML into a file called <span class="label label-accent">mapboxjs-exercise.html</span>. Then open that file in your browser.</p>
+                <p>Try adding <a href="https://www.mapbox.com/mapbox.js/example/v1.0.0/centering-markers/">this example code</a> to your map.</p>
+                <p>You should only need to add three lines, starting with "map.markerLayer.on". Once you've added it to your document, preview it in your browser to see if it's working.</p>
+                <p>Once you've added the centering markers code, find another relevant example and try altering your map with the example code.</p>
+            </div>
+            
             <h2 id="cartodb">CartoDB</h2>
             <p><a href="http://cartodb.com/">CartoDB.com</a></p>
             <p>CartoDB is a similar service that has a more data-driven admin interface than MapBox. You can accomplish a lot of similar things using MapBox, but CartoDB allows you to accomplish more without writing any code.</p>
@@ -165,6 +196,26 @@
                 <p>Share your result with me by <a href="http://developers.cartodb.com/tutorials/sharing_maps.html">sharing and embedding</a> the map on a bl.ocks page, as you did with the MapBox exercise.</p>
             </div>
             
+            <div id="inclass2" class="well">
+                <h4 class="accent"><i class="icon-pencil"></i> Creating a proportional symbol map in CartoDB</h4>
+                <p><a href="https://wilsonandrews.cartodb.com/dashboard/common_data">Pick the "Populated places" dataset from this page</a>. If you already made a map with this data, you can simply open that map.</p>
+                <p>This dataset is pretty large, and it can be difficult to really see much with the number of dots. Let's pick a subset of the data to look at.</p>
+                <p>Filter the places down to only the "world cities." That is, the rows that have a value of 1 in the <span class="label label-accent">worldcity</span> column.</p>
+                <p class="left pr10">Switch to <span class="label label-accent">Map view</span> and click the dataviz wizards button on the right.</p>
+                <img src="images/wizards.gif">
+                <div class="clear"></div>
+                <p>Choose the Bubble option and tweak the options as appropriate for your data.</p>
+                <p>Set options for the infowindow and configure your legend.</p>
+                <p>Once you've completed the above tasks, create the visualization in the top right corner. That space will then be replaced with a Publish option which will allow you to further customize your map's functionality prior to embedding it.</p>
+            </div>
+            
+            <div id="homework" class="well">
+                <h4 class="accent"><i class="icon-pencil"></i> Using a map in a story</h4>
+                <p>Create a map for one of your stories. Mappable stories can be hard to find, and we've learned that not all geography data is best visualized using a map, so you've got <strong>2 weeks</strong> to do it.</p>
+                <p>You can use any of the mapping tools we've worked with. I expect you to have some questions about how to accomplish your ideas, and I will help point you in the right direction. Don't be afraid to suggest something that you're not sure how to do, and I can help you learn it individually.</p>
+                <p><strong>This is due before our last class, Nov. 11.</strong></p>
+            </div>
+            
         </div>
         <!-- end .span7 -->
         
@@ -173,7 +224,11 @@
             <h4>Sections</h4>
             <p>
                 <a href="#mapbox">MapBox</a>: <a href="#exercise1">Exercise #1</a><br>
+                <a href="#mapbox-js">MapBox JS</a><br>
+                <a href="#inclass1">In-class exercise</a><br>
                 <a href="#cartodb">CartoDB</a>: <a href="#exercise2">Exercise #2</a><br>
+                <a href="#inclass2">In-class exercise</a><br>
+                <a href="#homework">Homework</a><br>
             </p>
         </div>
       </div><!--/row-->
