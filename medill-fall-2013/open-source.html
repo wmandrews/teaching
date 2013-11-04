@@ -68,6 +68,48 @@
     <div class="container">
       <div class="row mt10">
         <div class="span7 offset1">
+        
+            <h2 id="wolfram">Wolfram Alpha</h2>
+            <p><a href="http://www.wolframalpha.com/">Link</a></p>
+            
+            <p>OK, so not truly open source. But this website is a fantastic resource for learning about data, statistics and comparisons.</p>
+            
+            <p>It's basically Google for reliable data figures, and it's much smarter about the queries that you give it. Many of the data points that you might be inclined to consult Wikipedia for can be found much more reliably and sourced on Wolfram. And it does all the calculations for you.</p>
+            
+            <div class="row-fluid">
+                <div class="span4">
+                    <p>The Pro account ($5/month) offers even more. On many of the data table results, you can turn them into charts that you can embed or save as images.</p>
+                    <p>But you can still get lots of interesting data comparisons for free, and you can simply use the data from the site in your own charting. Click any underlined statistics to see the source of the data.</p>
+                </div>
+                <div class="span8">
+                    <img src="images/wolfram.jpg">
+                </div>
+            </div>
+            
+            <h4>Some sample searches</h4>
+            <p><a href="http://www.wolframalpha.com/input/?i=immigrants+to+united+states">immigrants to united states</a></p>
+            <p><a href="http://www.wolframalpha.com/input/?i=growth+chart+male%2C+7yr%2C+4%272%27%27">growth chart male, 7yr, 4'2''</a></p>
+            <p><a href="http://www.wolframalpha.com/input/?i=when+did+the+Simpsons+premiere%3F&lk=6&ab=c">when did the Simpsons premiere?</a></p>
+            
+            <p>Try clicking the <span class="label label-accent">Random</span> button underneath the search box to get some recommendations.</p>
+        
+            <h2 id="tabula">Tabula</h2>
+            <p><a href="http://jazzido.github.io/tabula/">Link</a></p>
+            
+            <p>This tool will help you liberate data tables from <strong>pdfs into spreadsheet</strong> form.</p>
+            
+            <p>Many public records requests will result in a batch of scanned documents that contain data tables. This is not optimal for analyzing and storytelling with the data. This is where Tabula comes in.</p>
+            
+            <p>The application runs in your browser, much like Open Refine does. Once you've submitted a pdf to use, all you need to do is draw a rectangle over the area of the data table in the pdf and it will hopefully output clean data for you.</p>
+            
+            <img style="padding-bottom: 15px;" src="images/tabula.jpg">
+            
+            <div id="exercise1" class="well">
+                <h4 class="accent"><i class="icon-pencil"></i> Exercise</h4>
+                <p><a href="https://www.dropbox.com/s/alomcc3xgw04jxu/black-budget-table.pdf"><i class="icon-file-text-alt"></i> Black budget document</a></p>
+                
+                <p>Try to capture the data from the pdf linked above.</p>
+            </div>
             
             <h2 id="soundcite">Soundcite</h2>
             <p><a href="http://soundcite.knightlab.com/">Link</a></p>
@@ -77,23 +119,17 @@
             <p>If you're at a rally, I want to hear the crowd. If you're interviewing someone famous or someone with an interesting voice, ask to get the audio. Hearing a voice is a great way to connect the reader with your subject.</p>
             
             <p>If the noise from a location you're reporting from is an important part of the story or would give more feeling, take one minute to capture a bit of clean audio that can be edited to sprinkle in your story. It can have a strong impact.</p>
-            
-<!--
-            <div class="row-fluid">
-                <div class="span4">
-                    <h4></h4>
-                    <p></p>
-                </div>
-                <div class="span8">
-                </div>
-            </div>
--->
 
-            <div id="exercise1" class="well">
-                <h4 class="accent"><i class="icon-pencil"></i> Exercise #1</h4>
+
+            <div id="exercise2" class="well">
+                <h4 class="accent"><i class="icon-pencil"></i> Exercise</h4>
                 <p>Create a <a href="https://gist.github.com/">Gist</a> on bl.ocks.org (remember to name the Gist file index.html) using <a href="https://soundcloud.com/cbs-radio-news/07-gervais-obama-speech">this clip of Obama's 2012 acceptance speech.</a> Write a sentence of text in a &lt;p&gt; tag and insert the audio in a logical spot using the instructions on the Soundcite website.</p>
             </div>
             
+            <h2 id="timeline">Timeline JS</h2>
+            <p><a href="http://timeline.knightlab.com/">Link</a></p>
+            
+            <p>Timeline JS is a great tool for building time-based interactives. And contrary to its name, you don't need to know JavaScript to be able to make really robust presentations using this tool.</p>
         </div>
         <!-- end .span7 -->
         
@@ -101,14 +137,45 @@
 
             <h4>Sections</h4>
             <p>
-                <a href="#soundcite">Soundcite</a>: <a href="#exercise1">Exercise #1</a><br>
+                <a href="#wolfram">Wolfram Alpha</a><br>
+                <a href="#tabula">Tabula</a>: <a href="#exercise1">Exercise</a><br>
+                <a href="#soundcite">Soundcite</a>: <a href="#exercise2">Exercise</a><br>
+                <a href="#timeline">Timeline JS</a>: <a href="#exercise3">Exercise</a><br>
+                <a href="#homework">Homework</a>
             </p>
         </div>
       </div><!--/row-->
       
       <!-- end exercises and pre-class material -->
       
-      <!-- do walk through for creating map with populated places data -->
+      <div class="row">
+        <div class="span11 offset1">
+            <p>Let's take a look at some examples.</p>
+            <h4><a href="http://www.denverpost.com/breakingnews/ci_21119904">Shooting at Aurora</a> | <a href="http://backtoghana.com/timeline">Ghana Timeline</a> | <a href="http://www.mysanantonio.com/news/data_central/item/Money-Laundering-8792.php">Money laundering investigation</a></h4>
+            <iframe src="http://embed.verite.co/timeline/?source=0AoYV5_X0YIRTdGpINFNSTGJIX2FBMFdKMHNNUklKaEE&amp;font=Bevan-PotanoSans&amp;maptype=toner&amp;lang=en&amp;width=950&amp;height=680" width="100%" height="680" frameborder="0"></iframe>
+        </div>
+      </div>
+      
+      <div class="row mt10">
+        <div class="span7 offset1">
+            <div id="exercise3" class="well">
+                <h4 class="accent"><i class="icon-pencil"></i> Exercise</h4>
+                <p><a href="https://docs.google.com/document/d/12iJezd1b_WCu9xzbznVwccq7KlXfTeR_LSgodyXhRsI">Timeline document with dates</a></p>
+                <p>Make a timeline about the Syrian conflict using the dates in the document above. Use the different services supported by Timeline JS (Flickr, Google Maps, YouTube, Twitter, etc.) to add media and context to the timeline.</p>
+            </div>
+            
+            <div id="homework" class="well">
+                <h4 class="accent"><i class="icon-pencil"></i> Homework</h4>
+                <p>Make a timeline using Timeline JS. You have two story options:</p>
+                <ol style="margin-bottom: 10px;">
+                    <li>A story for your beat.</li>
+                    <li>A 2013 year in review. Each month should have at least one event represented. Take a particular angle on the review; it could be cultural, entertainment, political, world news, sports, etc.</li>
+                </ol>
+                <p>Send me a link to your timeline <strong>before next class</strong>.</p>
+            </div>
+            
+        </div>
+      </div>
       
       <hr>
 
