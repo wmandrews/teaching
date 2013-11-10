@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Fusion Tables - Digital Frameworks at Medill, Fall 2013</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://www.wilsonmarkandrews.com/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="http://www.wilsonmarkandrews.com/css/inline.min.css" rel="stylesheet" type="text/css">
+    <link href="http://www.wilsonmarkandrews.com/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+    <!--[if lte IE 7]><link href="http://www.wilsonmarkandrews.com/css/font-awesome-ie7.min.css" rel="stylesheet" type="text/css"><![endif]-->
+    <link href="http://www.wilsonmarkandrews.com/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:700,400" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://www.wilsonmarkandrews.com/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://wilsonmarkandrews.com/images/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://wilsonmarkandrews.com/images/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://wilsonmarkandrews.com/images/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://wilsonmarkandrews.com/images/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://wilsonandrews.org/favicon.png">
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <p class="title mb0">Digital Frameworks</p>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              <a href="http://www.medill.northwestern.edu/" class="navbar-link">Medill</a>
+            </p>
+            <ul class="nav">
+              <li class=""><a href="./">Overview</a></li>
+              <li><a href="./schedule.html">Schedule</a></li>
+<!--               <li><a href="./resources.html">Resources</a></li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Subhead
+    ================================================== -->
+    <header class="jumbotron subhead" id="overview">
+      <div class="container">
+        <h1>FUSION TABLES</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row mt10">
+        <div class="span7 offset1">
+                
+            <h2 id="overview">Overview</h2>
+            <p><a href="https://support.google.com/fusiontables/answer/184641?hl=en&ref_topic=1652595">About</a></p>
+            <p>Google Fusion Tables is a common way to turn spreadsheets into maps and charts. Its mapping function is kind of a like a lighter-weight CartoDB, but it's free and open source, and there are a lot of helpful tutorials and existing datasets already in fusion table format for copying.</p>
+            
+            <h2>Making a map</h2>
+            <p>To make a data-driven map, you usually need two specific types of information: <span class="label label-accent">geography</span> and <span class="label label-accent">data by geography.</span></p>
+            
+            <div class="row-fluid">
+                <div class="span4">
+                    <p>For example, to show election results by county, you need the shape of each U.S. county, and the count of votes for each candidate for that county.</p>
+                </div>
+                <div class="span8">
+                    <img src="images/election-map.jpg">
+                </div>
+            </div>
+            
+            <h4 class="accent">Let's look at these two ingredients.</h4>
+            
+            <h2 id="shapefiles">Shapefiles (.shp)</h2>
+            
+            <p><strong>What it is:</strong> Geographic information about a place. Either a single geographic point, denoted by a latitude and longitude measure, or a collection of points that form the outline of a shape, like a state or county.</p>
+            
+            <p><strong>Where you can find it:</strong> Many places, but a good place to start for U.S. geography is <a href="http://www.census.gov/cgi-bin/geo/shapefiles2013/main">here</a>. Also, searching google for a specific place you want + "shapefile" or "shp" often gives good results.</p>
+            
+            <p><strong>How to use it:</strong> Most web mapping needs the geographic information in a different format than your shapefile, so you often have to convert it for use with whatever software you're using. For fusion tables, doing a quick google search of "shapefile to fusion table" gives us this handy site, <a href="http://www.shpescape.com/">Shape Escape</a>.</p>
+            
+            <div class="well">
+                <h4 class="accent"><i class="icon-pencil"></i> Make a copy of the converted shapefile in Fusion Tables</h4>
+                <p>I've downloaded and converted a shapefile of U.S. counties and uploaded it to Fusion Tables.</p>
+                <p><strong><a href="https://www.google.com/fusiontables/DataSource?docid=1wJIuQ-6cGJPujhpNuDO_zCNRsPC8dj7N1OIIPrY#map:id=17" target="_blank">Click to view the shapefile data</a></strong></p>
+                <p>Click <span class="label label-accent">File > Make a copy</span> to duplicate this data into your own Google Drive.</p>
+            </div>
+            
+            <div class="row-fluid">
+                <div class="span4">
+                    <h4>Visualizing your data</h4>
+                    <p>The default view of a fusion table is the row layout, which is the familiar spreadsheet-style view.</p>
+                    <p>Click the red + icon to see the other viewing options. Select <span class="label label-accent">Add map</span> to view your data in a geographic view.</p>
+                    <img src="images/fusion-2.jpg">
+                </div>
+                <div class="span8">
+                    <img src="images/fusion-1.jpg">
+                </div>
+            </div>
+            
+            <p>You should now see something like this.</p>
+            <div class="row-fluid">
+                <img src="images/fusion-3.jpg">
+            </div>
+            
+            <div class="row-fluid">
+                <div class="span3">
+                    <p>Google has put a point at the center of each of your counties by default. To edit the map style, select the arrow on your Map tab and click <span class="label label-accent">Change map styles.</span></p>
+                </div>
+                <div class="span4">
+                    <img src="images/fusion-4.jpg">
+                </div>
+                <div class="span5">
+                    <img src="images/fusion-5.jpg">
+                </div>
+            </div>
+            
+            <p>Here is where you can change the display of your map. But since we don't have any data yet, we don't really have much to show. So let's import the other ingredient of map-making: data by geography.</p>
+            
+            <h2 id="data-geography">Data by geography (.csv, .xls, etc.)</h2>
+            
+            <p><strong>What it is:</strong> Data that is organized by location. Unemployment by county, race by census tract and GDP by country are all examples.</p>
+            
+            <p><strong>Where you can find it:</strong> Again, many places and many different formats, as many different sources organize data by geography. For this exercise, we will use the <a href="http://beta.censusreporter.org/">Census Reporter</a> website.</p>
+            
+            <p><strong>How to use it:</strong> You're familiar with opening these file types in Excel. The <strong>KEY ELEMENT</strong> to your data by geography is that it have some kind of identifier for each geography that matches your shapefile rows. This is often in the form of a <span class="label label-accent">GEO ID</span>.</p>
+            
+            <div class="well">
+                <h4 class="accent"><i class="icon-pencil"></i> Create a Fusion Table with data by geography</h4>
+                <p><strong><a href="https://www.dropbox.com/s/p6l4r4v3bpfj2ze/education-by-county-2011acs.xlsx">Download this file</a></strong></p>
+                <p>I've grabbed a file from <a href="http://beta.censusreporter.org/">Census Reporter</a> and cleaned it up. This file has education attainment by county.</p>
+                <p>Navigate to your Google Drive page and create a new fusion table data by uploading the data file you just downloaded from above. Click through the prompts until you have your data file opened in a new fusion table.</p>
+                <img src="images/fusion-8.jpg">
+            </div>
+            
+            <h4>SUPER IMPORTANT</h4>
+            <p><strong>I repeat</strong>, the rows of your data have to each have an id that matches the id's that exist in your shapefile output.</p>
+            
+            <p>Luckily, in this case, our shapefile source and data source are the same, and use a matching identifier for each county across the data sets.</p>
+            <div class="row-fluid">
+                <div class="span8">
+                    <h4>Shapefile output</h4>
+                    <img src="images/fusion-6.jpg">
+                </div>
+                <div class="span4">
+                    <h4>Data by geography</h4>
+                    <img src="images/fusion-7.jpg">
+                </div>
+            </div>
+            
+            <h2 id="merge">Merging the two together</h2>
+            <p>Sometimes your shapefile will already have all the data you want. But in this case, we need to merge the geography (county shapes) with the data (education attainment levels).</p>
+            
+            <div class="well">
+                <h4 class="accent"><i class="icon-pencil"></i> Merge the two Fusion Tables</h4>
+                <p>The two tables: <a href="https://www.google.com/fusiontables/DataSource?docid=1wJIuQ-6cGJPujhpNuDO_zCNRsPC8dj7N1OIIPrY#rows:id=1">Geography</a> | <a href="https://www.dropbox.com/s/p6l4r4v3bpfj2ze/education-by-county-2011acs.xlsx">The table you made from this data download</a></p>
+                <p>Starting with either table, navigate to <span class="label label-accent">File > Merge.</span></p>
+                <p>Select the other table from your file list. If you're in the data file, pick U.S. Counties. If you're in the counties file, pick the data file.</p>
+                <p>Pick the two GEOID fields that have IDs in the same format.</p>
+                <p>Next you can choose which columns to use in the new table that will be created from the merge. I often just choose to include all of the fields in case I want to use them later.</p>
+                <p>Next, view your finished merged table!</p>
+            </div>
+            
+            <h2 id="style">Styling the map</h2>
+            <p>Now you can see that your table has data from both the shapefile source and the education data. If it didn't automatically create a map of your new table, click the red + icon and <span class="label label-accent">Add map.</span></p>
+            
+            <div class="row-fluid">
+                <div class="span4">
+                    <p>Go to "Change map styles" in the Map tab dropdown.</p>
+                </div>
+                <div class="span8">
+                    <img src="images/fusion-4.jpg">
+                </div>
+            </div>
+            
+            <div class="row-fluid">
+                <div class="span4">
+                    <h4>Style and color</h4>
+                    <p>You have several options to choose from. I recommend viewing by Polygons to visualize the map as a <a href="https://www.google.com/search?site=&tbm=isch&source=hp&biw=1680&bih=872&q=choropleth&oq=choropleth&gs_l=img.3..0l10.679.679.0.960.1.1.0.0.0.0.73.73.1.1.0....0...1ac.2.31.img..0.1.72.mnfPrnmeNlQ">choropleth</a>.</p>
+                    <p>Choose color values that go from light to dark in one color family. You'll probably also want to edit the color's opacity so it's around 70% instead of the default 50%.</p>
+                    <p>This is a good site for picking custom colors for maps: <a href="http://colorbrewer2.org/">Colorbrewer</a>.</p>
+                </div>
+                <div class="span8">
+                    <img src="images/fusion-9.jpg">
+                </div>
+            </div>
+            
+            <div class="row-fluid">
+                <div class="span5">
+                    <h4>Info window layout</h4>
+                    <p>The default info window when you click a polygon is a little messy. Use the option just below map styles to edit this, removing the unnecessary fields and showing just the ones  that are relevant to the graphic.</p>
+                    
+                    <p>I chose to show the name of the county and the percent of college graduates.</p>
+                    <img src="images/fusion-11.jpg">
+                </div>
+                <div class="span7">
+                    <img src="images/fusion-10.jpg">
+                </div>
+            </div>
+            
+            <div class="row-fluid">
+                <h2>Publish</h2>
+                <p>When you're ready to publish, it's just like many of the other tools we've used in this class.</p>
+                <img src="images/fusion-12.jpg">
+            </div>
+            
+            <div class="row-fluid">
+                <h2>Other options</h2>
+                <p>Fusion Tables also has charting, powerful summaries (Tools > Summarize) and filtering. There are some explorations of more of Fusion Tables' power on <a href="https://support.google.com/fusiontables/answer/184641?hl=en">this page</a>.</p>
+            </div>
+            
+            <div id="homework" class="well">
+                <h4 class="accent"><i class="icon-pencil"></i> Homework</h4>
+                <p>Use <a href="http://www.census.gov/cgi-bin/geo/shapefiles2013/main">Census shapefiles</a> and <a href="http://beta.censusreporter.org/">Census Reporter</a> data to create a FT map.</p>
+                <p>The map can be of any geographic area and of any statistic (think about your beat, this could be a nice story for you to report on.) You can use another source besides Census Reporter, but you will likely have more work to do to create matching ID's between the two sets. The best would be to find a shapefile that has the data you want to visualize already included.</p>
+                
+                <p><strong>This is due in two weeks, on November 25.</strong></p>
+            </div>
+            
+        </div>
+        <!-- end .span7 -->
+        
+        <div class="span4">
+
+            <h4>Sections</h4>
+            <p>
+                <a href="#overview">Overview</a><br>
+                <a href="#shapefiles">Shapefiles</a><br>
+                <a href="#data-geography">Data by geography</a><br>
+                <a href="#merge">Merging your data</a><br>
+                <a href="#style">Styling the map</a><br>
+                <a href="#homework">Homework</a><br>
+            </p>
+        </div>
+      </div><!--/row-->
+      
+      <!-- end exercises and pre-class material -->
+      
+      <!-- do walk through for creating map with populated places data -->
+      
+      <hr>
+
+      <footer>
+        <p>This site uses <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>, <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> and <a href="http://www.google.com/fonts">Google Fonts</a>.</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://www.wilsonmarkandrews.com/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
