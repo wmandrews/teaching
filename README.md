@@ -1,4 +1,4 @@
 Teaching
 ========
 
-These are the files for my teaching sites.
+Files for my teaching sites.
